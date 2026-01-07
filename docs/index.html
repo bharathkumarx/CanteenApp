@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Canteen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">College Canteen</h1>
+
+    <div class="section">
+      <h2>Select shop</h2>
+      <div class="shop-list">
+        <button class="shop-button" data-shop="1">Shop 1 - Main Canteen</button>
+        <button class="shop-button" data-shop="2">Shop 2 - Bakery</button>
+        <button class="shop-button" data-shop="3">Shop 3 - Meals Corner</button>
+      </div>
+      <p class="note">You can order from only one shop at a time.</p>
+    </div>
+
+    <div class="section" id="menu-section">
+      <div class="menu-header">
+        <h2 id="menu-title">Menu</h2>
+        <button id="change-shop" class="link-button">Change shop</button>
+      </div>
+      <div class="filters">
+        <button class="filter-button active" data-category="all">All</button>
+        <button class="filter-button" data-category="snacks">Snacks</button>
+        <button class="filter-button" data-category="drinks">Drinks</button>
+        <button class="filter-button" data-category="meals">Meals</button>
+      </div>
+      <div id="menu-list" class="menu-list"></div>
+    </div>
+
+    <div class="section">
+      <h2>Cart</h2>
+      <p id="cart-shop" class="note"></p>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <p id="cart-total">Total: ₹0</p>
+        <button id="place-order" class="primary-button">Place order</button>
+      </div>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

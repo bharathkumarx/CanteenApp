@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | College Canteen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+  <div class="login-card">
+    <h1>🍽 College Canteen</h1>
+    <p class="subtitle">Student Login</p>
+
+    <div class="input-group">
+      <input type="text" id="usn" required>
+      <label>University Seat Number</label>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="password" required>
+      <label>Password</label>
+    </div>
+
+    <button class="primary-button full" onclick="login()">Login</button>
+
+    <p id="msg" class="login-msg"></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
